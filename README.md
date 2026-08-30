@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# ClariFact
+=======
 # ClariFact
 
 **AI-Powered Multimodal Content Credibility Analysis System**
@@ -69,3 +72,4 @@ See `AGENTS.md` for the operating manual for AI coding agents.
 
 ## Current Status
 Foundation setup complete. See `agent/CURRENT_STATE.md` for current phase and next priorities.
+>>>>>>> master
