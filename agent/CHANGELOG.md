@@ -21,11 +21,21 @@
 - agent/CHANGELOG.md: Change log.
 - agent/SESSION_HANDOFF.md: Session handoff notes.
 
-### Changed
-- (none — fresh project)
+## [0.1.0] - 2026-09-02
 
-### Fixed
-- (none — fresh project)
+### Added
+- Phase 1: Backend Foundation (FastAPI, SQLite, SQLAlchemy, pydantic)
+- Phase 2: Authentication (Register, Login, JWT verification, Logout)
+- Phase 3: Text analysis pipeline with Mock AI adapter
+- Phase 4: Database models for User, Content, Analysis, Claim, Source
+- Phase 5: History and Analysis detail APIs implemented
+- Phase 6: Backend unit tests for health, auth, analyze, history endpoints
+
+### Changed
+- Shifted database layer to SQLite for local MVP instead of PostgreSQL to facilitate rapid testing of the vertical slice without external DB dependency.
+
+### Status
+- Reached **CHECKPOINT 2 / TEXT COMPLETE**. Backend text slice is working end-to-end.
 
 ### Notes
 - All documentation created in accordance with project specifications.
