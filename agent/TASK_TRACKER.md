@@ -11,6 +11,10 @@
 - [x] Implement POST /api/auth/login
 - [x] Implement GET /api/auth/me
 - [x] Implement POST /api/auth/logout
+- [x] Frontend: Login page
+- [x] Frontend: Register page
+- [x] Frontend: Authentication state management (Context)
+- [x] Frontend: Protected route wrapper
 
 ## Text Analysis
 - [x] Claim extraction design (Phase 2 design)
@@ -23,8 +27,10 @@
 - [ ] Train and save claim classifier model (Real AI)
 - [ ] Implement evidence retrieval (Real AI)
 - [ ] Implement credibility scoring (Real AI)
-- [ ] Frontend: Text analysis form
-- [ ] Frontend: Results display
+- [x] Frontend: Text analysis form
+- [x] Frontend: Results display
+- [x] Frontend: History listing
+- [x] Frontend: Analysis detail page
 
 ## Image
 - [ ] Upload design (Phase 3)
@@ -46,11 +52,18 @@
 - [ ] History listing UI (Phase 6)
 
 ## Dashboard and UI
-- [ ] Page design (Phase 6)
-- [ ] Responsive implementation (Phase 6)
-- [ ] Accessibility (Phase 6)
+- [x] Page design (Phase 6)
+- [x] Responsive implementation (Phase 6)
+- [x] Accessibility (Phase 6)
 
 ## Testing
 - [x] Unit test design
 - [x] Integration test design
 - [ ] Model evaluation criteria
+- [x] Frontend: Register form validation tests
+- [x] Frontend: Login form validation tests
+- [x] Frontend: Text analysis validation tests
+- [x] Frontend: Results rendering tests
+- [x] Frontend: History rendering tests
+- [x] Frontend: Error state tests
+- [x] Frontend: Empty state tests
