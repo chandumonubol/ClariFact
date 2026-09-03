@@ -15,16 +15,15 @@
 ## Text Analysis
 - [x] Claim extraction design (Phase 2 design)
 - [x] TF-IDF + LR model design (Phase 2 design)
-- [x] Implement Mock AI for text analysis
-- [x] Implement POST /api/analyze
+- [x] Implement Real AI for text analysis
+- [x] Implement POST /api/analyze (Real AI integration)
 - [x] Database persistence for Analysis, Claims, Sources
-- [x] Implement GET /api/history
-- [x] Implement GET /api/analysis/{id}
-- [ ] Train and save claim classifier model (Real AI)
-- [ ] Implement evidence retrieval (Real AI)
-- [ ] Implement credibility scoring (Real AI)
-- [ ] Frontend: Text analysis form
-- [ ] Frontend: Results display
+- [x] GET /api/history implemented
+- [x] GET /api/analysis/{id} implemented
+- [x] Train and save claim classifier model (Real AI)
+- [x] Implement credibility scoring (Real AI)
+- [x] Frontend: Text analysis form
+- [x] Frontend: Results display
 
 ## Image
 - [ ] Upload design (Phase 3)
