@@ -20,9 +20,11 @@ def test_analyze_text_success(client, auth_token):
     }, headers={"Authorization": f"Bearer {auth_token}"})
     assert response.status_code == 200
     data = response.json()
-    assert data["credibility_label"] == "Supported"
+    # Real AI: no evidence available at Checkpoint 1, so assessment is Uncertain
+    assert data["credibility_label"] == "Uncertain"
     assert len(data["claims"]) > 0
-    assert len(data["evidence"]) > 0
+    # No external evidence retrieved at Checkpoint 1
+    assert len(data["evidence"]) == 0
 
 def test_analyze_text_fake(client, auth_token):
     response = client.post("/api/analyze", json={

@@ -21,7 +21,37 @@
 - agent/CHANGELOG.md: Change log.
 - agent/SESSION_HANDOFF.md: Session handoff notes.
 
-## [0.1.0] - 2026-09-02
+## [0.2.0] - 2026-09-03
+
+### Added
+- Phase 3: Real AI integration for Text analysis
+- Rule-based claim extraction with 5 claim types (checkable_claim, opinion, question, instruction, general_statement)
+- TF-IDF + Logistic Regression credibility classifier with rule-based fallback
+- Credibility categories: Supported, Partially Supported, Uncertain, Potentially Misleading
+- Content quality assessment (clarity, relevance, completeness, language_quality)
+- Stable public `analyze_text()` interface compatible with API contract
+- Full text preprocessing pipeline (whitespace normalization, cleaning, sentence segmentation, tokenization)
+- Comprehensive test coverage for all input types and claim classifications
+- Evidence handling with uncertain representation (no fabricated sources)
+- Explainable assessment with human-readable reasoning
+
+### Changed
+- Updated AI_STATE.md: Claim extraction implemented, credibility with rule-based fallback
+- Updated CURRENT_STATE.md: Phase 3 — Text Analysis Complete (AI Checkpoint 1 Reached)
+- Updated TASK_TRACKER.md: All text analysis tasks complete
+- Fixed: Added `re` import to credibility_scorer.py
+- Improved: Fake/hoax/scam/fraud keyword detection for potentially_misleading label
+
+### Status
+- Reached **CHECKPOINT 1 / TEXT ANALYSIS Complete**. AI text analysis pipeline fully implemented and tested.
+
+### Notes
+- AI assessment is AI-assisted, not absolute truth
+- Credibility ≠ Content Quality (distinguished in logic and UI)
+- Uncertainty is represented when evidence is unavailable (no fabrication)
+- All input types handled gracefully (None, empty, whitespace, special chars, etc.)
+
+## [0.1.0] - 2026-08-30
 
 ### Added
 - Phase 1: Backend Foundation (FastAPI, SQLite, SQLAlchemy, pydantic)
