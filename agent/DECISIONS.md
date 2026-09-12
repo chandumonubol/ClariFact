@@ -37,3 +37,11 @@ Decision: Maximum video duration 5 minutes, max size 50MB. Max image size 10MB.
 Reason: Practical limits for short video analysis, prevents resource exhaustion.
 Alternatives: Unlimited (would break frontend/backend), 10 min/100MB (too large for MVP).
 Status: Accepted
+
+## Decision 006
+
+Date: 2026-09-02
+Decision: Use SQLite for backend Checkpoint 2 (Text Complete) instead of PostgreSQL.
+Reason: Allows completely independent validation of the Backend -> AI -> Database flow without requiring a local Postgres service or Docker orchestration setup. 
+Alternatives: Wait for Database team (Member 4) to spin up Postgres. 
+Status: Accepted (for local MVP)
